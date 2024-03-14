@@ -168,3 +168,22 @@ exercises.c:52:7: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 cca4fff
+Thu 14 Mar 2024 09:17:43 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘arr2’
+   52 |   arr2 = (int *) malloc(size * sizeof(int));
+      |   ^~~~
+exercises.c:52:3: error: ‘arr2’ undeclared (first use in this function); did you mean ‘arr’?
+   52 |   arr2 = (int *) malloc(size * sizeof(int));
+      |   ^~~~
+      |   arr
+exercises.c:52:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:66:1: error: control reaches end of non-void function [-Werror=return-type]
+   66 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+44928d2
