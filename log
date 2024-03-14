@@ -157,3 +157,14 @@ exercises.c:64:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 b8ab01e
+Thu 14 Mar 2024 09:17:00 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:52:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   52 |   if (arr2 = NULL) exit(EXIT_FAILURE);
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cca4fff
