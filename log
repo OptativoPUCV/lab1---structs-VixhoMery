@@ -198,3 +198,14 @@ exercises.c:53:7: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 5e3fad8
+Thu 14 Mar 2024 09:20:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   53 |   if (arr2 = NULL) exit(EXIT_FAILURE);
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+141548e
