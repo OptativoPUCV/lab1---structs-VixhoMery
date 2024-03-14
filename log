@@ -17,3 +17,18 @@ Thu 14 Mar 2024 08:59:06 PM UTC:
  tests:  0|6
 total_score: 10/70
 1512f02
+Thu 14 Mar 2024 09:06:24 PM UTC: 
+ exercises.c | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:33:7: error: ‘i’ undeclared (first use in this function)
+   33 |   for(i = 0; i < size / 2; i++)
+      |       ^
+exercises.c:33:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:32:7: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+   32 |   int aux;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+93f1467
