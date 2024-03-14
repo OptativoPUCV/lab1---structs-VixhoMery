@@ -209,3 +209,14 @@ exercises.c:53:7: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 141548e
+Thu 14 Mar 2024 09:22:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:22: error: ‘*arr2_22 + _10’ may be used uninitialized [-Werror=maybe-uninitialized]
+   60 |         arr[i] = arr2[contador];
+      |                  ~~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+723dab8

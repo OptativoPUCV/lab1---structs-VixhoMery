@@ -50,7 +50,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
 {
   int *arr2;
   arr2 = (int *) malloc(size * sizeof(int));
-  if (arr2 = NULL) exit(EXIT_FAILURE);
+  if (arr2 == NULL) exit(EXIT_FAILURE);
   int contador = 0;
   
   for(int i = 0; i < size; i++)
