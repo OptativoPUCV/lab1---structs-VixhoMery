@@ -308,3 +308,26 @@ exercises.c:66:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 19e3dbe
+Thu 14 Mar 2024 09:24:51 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:51:8: error: array size missing in ‘arr2’
+   51 |   int *arr2[];
+      |        ^~~~
+exercises.c:52:8: error: assignment to expression with array type
+   52 |   arr2 = (int *) malloc(size * sizeof(int));
+      |        ^
+exercises.c:60:24: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   60 |         arr2[contador] = arr[i];
+      |                        ^
+exercises.c:65:15: error: expected expression before ‘]’ token
+   65 |   return arr2[];
+      |               ^
+exercises.c:66:1: error: control reaches end of non-void function [-Werror=return-type]
+   66 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9d44754
