@@ -486,3 +486,9 @@ exercises.c:81:22: error: ‘arr’ undeclared (first use in this function); did
       |                      arr2
 Compilation failed
 32ce576
+Fri 15 Mar 2024 03:11:49 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|3
+total_score: 40/70
+637d93f
