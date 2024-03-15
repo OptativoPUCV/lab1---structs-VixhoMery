@@ -507,3 +507,14 @@ Fri 15 Mar 2024 07:02:28 PM UTC:
  1 file changed, 12 insertions(+), 12 deletions(-)
  tests:  0|0
 53fa4b9
+Fri 15 Mar 2024 07:08:49 PM UTC: 
+ exercises.c | 53 ++++++++++++++++++++++++++++++++++++-----------------
+ 1 file changed, 36 insertions(+), 17 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:130:13: error: expected ‘;’ before ‘:’ token
+  130 |     return 1:
+      |             ^
+      |             ;
+Compilation failed
+2a267c9
