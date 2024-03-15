@@ -470,3 +470,19 @@ Fri 15 Mar 2024 02:58:01 PM UTC:
  tests:  0|4
 total_score: 30/70
 ad28de5
+Fri 15 Mar 2024 03:11:28 PM UTC: 
+ exercises.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:3: error: ‘size3’ undeclared (first use in this function); did you mean ‘size2’?
+   78 |   size3 = size1 + size2;
+      |   ^~~~~
+      |   size2
+exercises.c:78:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:81:22: error: ‘arr’ undeclared (first use in this function); did you mean ‘arr2’?
+   81 |       if (arr1[i] <= arr[j])
+      |                      ^~~
+      |                      arr2
+Compilation failed
+32ce576
