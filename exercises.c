@@ -75,25 +75,35 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
   int i = 0, j = 0, k = 0;
-  for(k = 0; k < size1 + size2 - 1; k++)
+  int total = size1 + size2;
+  for(k = 0; k < total; k++)
     {
-      if(arr1[i] < arr2[j])
+      if(arr1[i] == arr2[j])
       {
         result[k] = arr1[i];
         i++;
+        j++;
       }
-      else if(arr1[i] > arr2[j])
+      else if(arr1[i] < arr2[j])
+      {
+        result[i] = arr1[i];
+        i++;
+      }
+      else
       {
         result[k] = arr2[j];
         j++;
       }
-      else
+    }
+  for(int i = 0; i < total; i++)
+    {
+      if (result[i] == result[i + 1])
       {
-        result[k] = arr1[i];
-        i++;
-        j++;
+        result[i+1] = result[-1];
+        total--;
       }
     }
+
 }
 
 /*
