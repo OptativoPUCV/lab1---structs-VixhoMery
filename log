@@ -541,3 +541,9 @@ exercises.c:199:18: error: ‘temporal’ undeclared (first use in this function
 exercises.c:199:18: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 50a5114
+Fri 15 Mar 2024 07:49:44 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+62a6c8f
