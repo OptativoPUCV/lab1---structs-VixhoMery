@@ -74,11 +74,10 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-  int i = 0, j = 0, k;
-  int size3 = size1 + size2;
-  for(k = 0; k < size3; k++)
+  int i = 0, j = 0, k = 0;
+  while (i < size1 && j < size2)
     {
-      if (arr1[i] <= arr2[j])
+      if (arr1[i] < arr2[j])
       {
         result[k] = arr1[i];
         i++;
@@ -86,8 +85,20 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
       else
       {
         result[k] = arr2[j];
-        j++;
       }
+      k++;
+    }
+  while (i < size1) //si quedan elementos en el vector, se agregan
+    {
+      result[k] = arr1[i];
+      i++;
+      k++;
+    }
+  while(j < size2)
+    {
+      result[k] = arr2[j];
+      j++;
+      k++;
     }
 
 }
@@ -98,7 +109,12 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) 
+{ 
+
+
+  return -2; 
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
