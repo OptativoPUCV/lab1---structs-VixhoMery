@@ -200,5 +200,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
       }
       i++;
     }
-  return NULL; 
+  return cabeza; 
 }
